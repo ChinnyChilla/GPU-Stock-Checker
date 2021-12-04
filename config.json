@@ -1,0 +1,8 @@
+{
+	"twilio_account_sid": "YOU_TWILIO_ACCOUNT_ID",
+	"twilio_auth_token": "YOUR_TWILIO_AUTHENTICATION_TOKEN",
+	"discord_webhook_url": "YOUR_DISCORD_WEBHOOK_URL",
+	"phone_numbers": ["YOUR_PHONE_NUMBERS"],
+	"sender_phone_number": "SENDER_PHONE_NUMBER",
+	"delay_seconds": 10
+}
