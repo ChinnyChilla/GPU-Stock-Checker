@@ -97,7 +97,7 @@ while True:
         else:
             print((" [Best Buy] " + item_name + ": " +
                    '\033[2;32;40m IN STOCK\033[0;37;40m\n') * 10)
-            sendMessage("[IN STOCK]: " + instock + " from [Best Buy]")
+            sendMessage("[IN STOCK]: " + " from [Best Buy]")
             requests.post(discord_webhook, data={
                       'content': '@everyone GPU IN STOCK: ' + instock + url})
             best_buy_urls.remove(url)
