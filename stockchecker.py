@@ -103,6 +103,6 @@ while True:
             best_buy_urls.remove(url)
             timer = Timer(60 * 30, addBackToUrl, args=[url])
             timer.start()
-        if (datetime.datetime.today().hour > 13 or datetime.datetime.today().hour < 9):
+        if (datetime.datetime.now().hour > 13 or datetime.datetime.now().hour < 9):
             print("\033[1;35;40m Sleeping for 1 hour")
             time.sleep(60 * 60 * 1)
