@@ -53,7 +53,7 @@ while True:
 
     # Displays current time and time until next update
     timeNow = datetime.datetime.now() 
-	if (timeNow.hour > 13):
+    if (timeNow.hour > 13):
         print("\033[1;35;40m Sleeping for 18 hour")
         time.sleep(60 * 60 * 18)
 
