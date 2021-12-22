@@ -52,7 +52,11 @@ def addBackToUrl(url):
 while True:
 
     # Displays current time and time until next update
-    timeNow = datetime.datetime.now()
+    timeNow = datetime.datetime.now() 
+	if (timeNow.hour > 13):
+        print("\033[1;35;40m Sleeping for 18 hour")
+        time.sleep(60 * 60 * 18)
+
     delayTime = timeNow + datetime.timedelta(seconds=delaySeconds)
     print("\033[1;35;40m Another update in {} seconds! \033[1;34;40m Time Now: ".format(delaySeconds) +
           str(time.strftime("%H:%M:%S on %a, %b %d")) + "\033[0;37;40m\n")
@@ -103,6 +107,3 @@ while True:
             best_buy_urls.remove(url)
             timer = Timer(60 * 30, addBackToUrl, args=[url])
             timer.start()
-        if (datetime.datetime.now().hour > 13 or datetime.datetime.now().hour < 9):
-            print("\033[1;35;40m Sleeping for 1 hour")
-            time.sleep(60 * 60 * 1)
