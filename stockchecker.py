@@ -105,5 +105,5 @@ while True:
             requests.post(discord_webhook, data={
                       'content': '@everyone GPU IN STOCK: ' + url})
             best_buy_urls.remove(url)
-            timer = Timer(60 * 30, addBackToUrl, args=[url])
+            timer = Timer(60 * 60, addBackToUrl, args=[url])
             timer.start()
