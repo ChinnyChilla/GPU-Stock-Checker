@@ -26,9 +26,7 @@ best_buy_urls = ['https://www.bestbuy.com/site/nvidia-geforce-rtx-3070-8gb-gddr6
                  'https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440',
                  'https://www.bestbuy.com/site/nvidia-geforce-rtx-3060-ti-8gb-gddr6-pci-express-4-0-graphics-card-steel-and-black/6439402.p?skuId=6439402',
                  'https://www.bestbuy.com/site/nvidia-geforce-rtx-3090-24gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429434.p?skuId=6429434',
-                 "https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149",
-                 "https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161",
-                 "https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?skuId=6428324",]
+				 ]
                  
 requests.post(discord_webhook,
             data={'content': 'GPU Checker has started'})
